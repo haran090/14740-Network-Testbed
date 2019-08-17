@@ -3,7 +3,7 @@ zone "com." {
 	file "/etc/bind/db.com";
 };
 
-zone "coolcompany.com." {
+zone "*cool.com." {
 	type hint;
 	file "/etc/bind/db.cool";
 };

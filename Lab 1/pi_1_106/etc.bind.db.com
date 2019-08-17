@@ -3,7 +3,7 @@ $ORIGIN com.
 	IN	NS	ns.tld.com.
 ns.tld.com.	IN	A	192.168.1.106
 
-coolcompany.com.	IN	NS	ns.cool.com.
+cool.com.	IN	NS	ns.cool.com.
 ns.cool.com.	IN	A	192.168.1.108
 
 ctf.game.com.	IN	NS	ns.game.com.
