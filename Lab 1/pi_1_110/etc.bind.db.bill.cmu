@@ -1,0 +1,6 @@
+$ORIGIN bill.cmu.edu.
+@	1	IN	SOA	ns.bill.cmu.edu.	haran.sivaram.	7 1 10 1 1
+	IN	NS	ns.bill.cmu.edu.
+ns.bill.cmu.edu.	IN	A	192.168.1.110
+
+@	IN	A	192.168.1.110

@@ -1,0 +1,8 @@
+$ORIGIN edu.
+@	1	IN	SOA	ns.tld.edu.	haran.sivaram.	2 1 10 1 1
+	IN	NS	ns.tld.edu.
+ns.tld.edu.	IN	A	192.168.1.107
+
+cmu.edu.	IN	NS	ns.cmu.edu.
+
+ns.cmu.edu.	IN	A	192.168.1.109

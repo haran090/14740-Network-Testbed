@@ -1,0 +1,4 @@
+zone "game.com." {
+	type master;
+	file "/etc/bind/db.game";
+};

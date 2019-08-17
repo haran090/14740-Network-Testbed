@@ -1,0 +1,36 @@
+acl internals {
+127.0.0.0/8;
+192.168.1.109/24;
+};
+
+options {
+
+directory "/var/cache/bind";
+auth-nxdomain no;
+
+forwarders {
+0.0.0.0;
+};
+
+listen-on port 53 {
+127.0.0.1;
+192.168.1.109;
+};
+
+listen-on-v6 {
+none;
+};
+
+allow-query {
+internals;
+};
+
+allow-transfer {
+none;
+};
+
+allow-recursion {
+internals;
+};
+
+};

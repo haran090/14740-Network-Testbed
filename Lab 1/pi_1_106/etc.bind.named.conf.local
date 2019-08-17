@@ -1,0 +1,14 @@
+zone "com." {
+	type master;
+	file "/etc/bind/db.com";
+};
+
+zone "coolcompany.com." {
+	type hint;
+	file "/etc/bind/db.cool";
+};
+
+zone "*game.com." {
+	type hint;
+	file "/etc/bind/db.game";
+};

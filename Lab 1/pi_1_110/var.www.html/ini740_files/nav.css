@@ -1,0 +1,64 @@
+#floating-head {
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	z-index: 200;
+	margin: 0;
+	font-size: 12px;
+	text-align: left;
+  overflow: display;
+  font-family: 'Alegreya Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#logo {
+  display: block;
+  padding: 2px 2px 2px 18px;
+  margin: 0px;
+  height: 1.2em;
+  width: 260px;
+  background-color: #0068A9;
+  color: white;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 36px;
+}
+
+#logo-text {
+  display: block;
+  width: 280px;
+  padding: 0;
+  margin: 0 0 12px 0;
+  background-color: #0068A9;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+.navlink {
+  display: block;
+  width: 80px;
+  padding: 1px 3px 1px 5px;
+  border-top-style: solid;
+  border-width: 1px 0;
+  border-top-color: white;
+  margin: 0;
+  background-color: #0068A9;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+#floating-head a:link {
+  text-decoration: none;
+}
+
+#floating-head a:visited {
+  text-decoration: none;
+}
+
+#floating-head a:hover {
+  text-decoration: none;
+}
+

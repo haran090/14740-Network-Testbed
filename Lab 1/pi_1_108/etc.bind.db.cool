@@ -1,0 +1,6 @@
+$ORIGIN cool.com.
+@	1	IN	SOA	ns.cool.com.	haran.sivaram.	2 1 10 1 1
+	IN	NS	ns.cool.com.
+ns.cool.com.	IN	A	192.168.1.108
+
+cool.com.	IN	A	192.168.1.102

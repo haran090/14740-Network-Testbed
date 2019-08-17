@@ -1,0 +1,3 @@
+cmu.edu.	IN	NS	ns.cmu.edu.
+
+ns.cmu.edu.	IN	A	192.168.1.109

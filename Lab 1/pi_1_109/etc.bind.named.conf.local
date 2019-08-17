@@ -1,0 +1,8 @@
+zone "cmu.edu." {
+	type master;
+	file "/etc/bind/db.cmu";
+};
+zone "bill.cmu.edu." {
+	type hint;
+	file "/etc/bind/db.bill.cmu";
+};

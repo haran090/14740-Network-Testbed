@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://www.eyes-only.net/ -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Eyes Only!</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<h1 style="color:white;">  Original Site @ www.eyes.only.net</h1>
+<script async="" src="./eyes_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139123367-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head><body ontouchstart="showCoordinates(event)" ontouchmove="showCoordinates(event)" style="overflow: hidden;">
+
+<style>
+
+body {margin: 0;
+  padding: 0;
+  background: #5B1D7F;
+  height: ;
+  
+		left: 0;
+        right: 0;
+        margin-left: 0;
+        margin-right: 0;
+}
+.eyes{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.eye{
+  width: 12em;
+  height: 12em;
+  background: #fff;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball{
+  width: 4em;
+  height: 4em;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%; 
+}
+
+#active-area{
+height: 750px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+	.eye {
+		width: 6em;
+		height: 6em;
+		}
+	.ball{
+		width: 2em;
+		height: 2em;
+		}
+		
+		
+		
+		
+button {
+        
+        outline: none;
+
+      }
+
+      button:nth-child(2) {
+        
+      }
+
+      button:focus {
+        
+      }
+
+      button:active {
+       
+      }
+
+      .buttonsContainer {
+ 
+		visibility : hidden;
+      }
+
+      .main {
+        
+      }
+
+      .mainHeading {
+        
+      }
+
+      .scrollTarget {
+        /*position: absolute; */
+        /* border: 2px solid #ff1a35; */
+        /* height: 200px; */
+        /* left: 35px; */
+        /* right: 35px; */
+       /* overflow: scroll; */
+        /* -webkit-overflow-scrolling: touch; */
+      }
+
+      .bodyScrollLockStatus {
+        
+      }		
+		
+}
+
+
+
+</style>
+<!-- here's to a hidden image of our eyes for use by websites that like to show an image next to a link (like FB does -->
+<img src="./eyes_files/eyes.png" style="display: none;">
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+
+<script> document.body.addEventListener('touchmove', function(event) {event.preventDefault();}, false); </script>
+<div class="main">
+ <div class="scrollTarget">
+<div id="active_area">
+
+<div class="eyes">
+    <div class="eye">
+      <div class="ball" style="left: 55.6027%; top: 37.9267%; transform: translate(-55.6027%, -37.9267%);"></div>
+    </div>
+
+    <div class="eye">
+      <div class="ball" style="left: 55.6027%; top: 37.9267%; transform: translate(-55.6027%, -37.9267%);"></div>
+    </div>
+  </div>
+</div>
+<div class="addthis_inline_share_toolbox"></div>
+</div>
+</div>
+  
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+
+<!-- p>The horizontal and vertical coordinates of the touch are: <span id="demo"></span></p-->
+
+<script>
+  var balls = document.getElementsByClassName("ball");
+  document.onmousemove = function(){
+    var x = event.clientX * 100 / window.innerWidth + "%";
+    var y = event.clientY * 100 / window.innerHeight + "%";
+    //event.clientX => get the horizontal coordinate of the mouse
+    //event.clientY => get the Vertical coordinate of the mouse
+    //window.innerWidth => get the browser width
+    //window.innerHeight => get the browser height
+
+    for(var i=0;i<2;i++){
+      balls[i].style.left = x;
+      balls[i].style.top = y;
+      balls[i].style.transform = "translate(-"+x+",-"+y+")";
+    }
+  }
+</script>
+
+<script>
+// touch features
+var balls = document.getElementsByClassName("ball");
+function showCoordinates(event) {
+  var xx = event.touches[0].clientX * 100 / window.innerWidth + "%";
+  var yy = event.touches[0].clientY * 100 / window.innerHeight + "%";
+  //document.getElementById("demo").innerHTML = xx + ", " + yy;
+  
+  for(var ii=0;ii<2;ii++){
+      balls[ii].style.left = xx;
+      balls[ii].style.top = yy;
+      balls[ii].style.transform = "translate(-"+xx+",-"+yy+")";
+    }
+  
+}
+</script>
+
+<!-- Get Social Share buttons -->
+<script type="text/javascript" src="./eyes_files/addthis_widget.js"></script>
+<!-- Get Link Bar -->
+<!--  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cdb2f6ea16ccd5e"></script>  -->
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+
+ 
+
+   <div id="buttons" class="buttonsContainer" style="visibility:hidden">
+      <button id="buttonid" class="disableBodyScroll" ontouchstart="">Disable Body Scroll</button>
+      <button class="enableBodyScroll" ontouchstart="">Enable Body Scroll</button>
+    </div>
+
+    <script src="./eyes_files/bundle.js"></script>
+	<script>
+document.getElementById("buttonid").click();
+	</script>
+</body></html>

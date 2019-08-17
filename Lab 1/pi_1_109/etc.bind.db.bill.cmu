@@ -1,0 +1,3 @@
+bill.cmu.edu.	IN	NS	ns.bill.cmu.edu.
+
+ns.bill.cmu.edu.	IN	A	192.168.1.110

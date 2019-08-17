@@ -1,0 +1,11 @@
+$ORIGIN .
+@	1	IN	SOA	ns.root.	haran.sivaram.	3 1 10 1 1
+	IN	NS	ns.root.
+ns.root.	IN	A	192.168.1.105
+
+com.	IN	NS	ns.tld.com.
+ns.tld.com.	IN	A	192.168.1.106
+
+edu.	IN	NS	ns.tld.edu.
+ns.tld.edu	IN	A	192.168.1.107
+
