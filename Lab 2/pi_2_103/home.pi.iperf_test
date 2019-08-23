@@ -1,0 +1,1 @@
+iperf3 -c 192.168.2.104 -p 20000 -t 5 -C vegas -T vegas | grep sender & iperf3 -c 192.168.2.104 -p 30000 -t 5 -C cubic -T cubic | grep sender & iperf3 -c 192.168.2.104 -p 40000 -t 5 -C reno -T Reno | grep sender &
